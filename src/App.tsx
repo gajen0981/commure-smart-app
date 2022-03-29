@@ -13,14 +13,6 @@ const smartClient = new SMARTClient(smartConfig);
 
 function App() {
   return <Dashboard />;
-  // return (
-  //   <>
-  //     <AppHeader appName="Commure | Low-Code | SDKs" fixedToTop />
-  //     <div className="app-container">
-  //       <PatientList />
-  //     </div>
-  //   </>
-  // );
 }
 
 const asSMARTApp: HOFSmartApp = WrappedComponent => props => (
