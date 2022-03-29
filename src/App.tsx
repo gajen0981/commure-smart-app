@@ -2,7 +2,6 @@ import { AppHeader, PatientCard, FhirHumanName } from "@commure/components-core"
 import { CommureSmartApp, FhirDataQuery } from "@commure/components-data";
 import { Bundle, Patient } from "@commure/fhir-types/r4/types";
 import SMARTClient from "@commure/smart-core";
-import { PatientList } from "./components/PatientList/PatientList";
 import Dashboard from "./components/Dashboard/Dashboard";
 import React from "react";
 import { smartConfig } from "./config";
