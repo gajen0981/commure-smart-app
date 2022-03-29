@@ -1,7 +1,7 @@
 import React from "react";
 import { FhirDataQuery } from "@commure/components-data";
 import { Bundle, Patient } from "@commure/fhir-types/r4/types";
-import { FhirHumanName } from "@commure/components-core";
+import { FhirHumanName, FhirDateTime } from "@commure/components-core";
 
 export const PatientList: React.FC = () => (
   <ul className="patient-list">
@@ -24,6 +24,9 @@ export const PatientList: React.FC = () => (
                     hidePrefixes
                     value={(patient.name || [])[0]}
                   />
+                  <p className="patient-list__date">
+                    DOB: <FhirDateTime value={patient.birthDate} inline />
+                  </p>
                 </li>
               );
             })}
